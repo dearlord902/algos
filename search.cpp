@@ -14,6 +14,14 @@ using namespace std;
 */
 int linearSearch(auto data, auto key);//prototype
 
+int linearSearch(auto data, auto key)
+{ 
+	for (int i=0; i < data.size(); i++)
+		{
+			if (data[i] == key)
+				return i;
+		}
+}
 
 int main()
 {
@@ -43,7 +51,6 @@ int main()
  
    cout<<endl<<"To end input type the #-character (followed by Enter)"<<endl<<endl;
   cout<<"Enter a value to search for: ";
-
 
    cin>>search_key;
  
